@@ -21,7 +21,7 @@ Replaying := false
 ; start/stop recording
 F12::
 	global Recording
-    global ReferenceTime
+	global ReferenceTime
 	global ClickReplay
   
 	Recording := !Recording
@@ -102,7 +102,7 @@ F9::
 	Replaying := false
 	return
 	
-
+; left-click
 ~LButton::
 	global ClickReplay
 	global Recording
@@ -122,6 +122,7 @@ F9::
 	}
 	return
 
+; shift + left-click
 ~+LButton::
 	global ClickReplay
 	global Recording
@@ -141,6 +142,7 @@ F9::
 	}
 	return
 	
+; right-click	
 ~RButton::
 	global ClickReplay
 	global Recording
